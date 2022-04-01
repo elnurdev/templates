@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temaplates</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        .main-container { max-width: 1760px; }
+        .container { max-width: 1297px; }
+        .f-roboto { font-family: 'Roboto', sans-serif; }
+        .text-lg { font-size: 18px; line-height: 23px; }
+        .p { padding: 7px 30px 10px 30px; }
+        .bg-orange { background: #F55D48; }
+        .bg-gray { background: #574B4B; }
+        .text-gray { color: #574B4B; }
+        .bg-white { background: #DBD9D9; }
+        .text-white-100 { color: #DBD9D9; }
+        .bg-purple { background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%); }
+        .bg-grad { background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%); }
+        .bg-grad-2 { background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%); }
+        .text-black { background: #121212; }
+        .bg-dark-black { background: #333333; }
+        .bg-cinnamon { background: #574B4B; }
+        .text-cinnamon { background: #574B4B; }
+        .border-gray-right { border-right: 1px solid #574B4B; }
+        .border-gray-left { border-left: 1px solid #574B4B; }
+        .border-gray-bottom { border-bottom: 1px solid #574B4B; }
+        .border-gray-top { border-top: 1px solid #574B4B; }
+        .border-white-bottom { border-bottom: 1px solid #DBD9D9; }
+        .border-white-top { border-top: 1px solid #DBD9D9; }
+        .border-white-right { border-right: 1px solid #DBD9D9; }
+        .border-white-left { border-left: 1px solid #DBD9D9; }
+        .border-left-white { border-left: 1px solid #fff; }        
+        .border-right-white { border-right: 1px solid #fff; }
+        .main-title { font-size: 139px; line-height: 182px; }
+        .text-title { font-size: 63px; line-height: 83px; }
+        .text-xs { font-size: 10px; line-height: 20px; }
+        .text-6xl { font-size: 64px; line-height: 89px; }
+        .text-4xl { font-size: 36px; line-height: 50px; }
+        .text-sm-title { font-size: 31px; line-height: 41px; }
+        .space-x-8 { margin-left: 30px; }
+        img { display: inline-block; }
+    </style>
+    <!-- fons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- tailwindcss -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body class="text-base f-roboto bg-black">
+    <header style="background: url('./img/main-screen__bgc.png'); padding: 40px 0 218px 0;">
+        <div class="main-container mx-auto">
+            <div class="grid grid-cols-3" style="padding: 0 0 190px 0;">
+                <div>
+                    <img src="./img/logo.svg" alt="Logo">
+                </div>
+                <div class="flex justify-between items-center col-span-2">
+                    <ul class="flex space-x-14" style="margin-left: -24px; margin-top: 1px;">
+                        <li class="text-white cursor-pointer">Главная</li>
+                        <li class="text-white cursor-pointer">Курсы</li>
+                        <li class="text-white cursor-pointer">Расписание</li>
+                        <li class="text-white cursor-pointer">Преподаватели</li>
+                        <li class="text-white cursor-pointer">Рассылка</li>
+                        <li class="text-white cursor-pointer">Контакты</li>
+                    </ul>
+                    <button class="bg-purple rounded-full text-white p">Зайти в кабинет</button>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto">
+            <div class="text-6xl text-white font-bold">Первый курс <br> по компьютерной сборке</div>
+            <div class="flex" style="margin-top: 50px; margin-left: 0px;">
+                <div class="text-center text-black" style="padding: 20px 30px 20px 30px; margin-right: 31px;">
+                    <div class="text-white text-4xl font-bold">18</div>
+                    <div class="opacity-40 text-white">Дней</div>
+                </div>
+                <div class="text-center text-black" style="padding: 20px 30px 20px 30px; margin-right: 31px;">
+                    <div class="text-white text-4xl font-bold">18</div>
+                    <div class="opacity-40 text-white">Часов</div>
+                </div>
+                <div class="text-center text-black" style="padding: 20px 30px 20px 30px; margin-right: 30px;">
+                    <div class="text-white text-4xl font-bold">18</div>
+                    <div class="opacity-40 text-white">Минут</div>
+                </div>
+                <div class="text-center text-black" style="padding: 20px 30px 20px 30px">
+                    <div class="text-white text-4xl font-bold">18</div>
+                    <div class="opacity-40 text-white">Секунд</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-black" style="padding: 35px 0 28px 0;">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-start">
+                <button class="bg-grad p text-white rounded-full mt-2">Заказать курс</button>
+                <div class="space-y-2.5">
+                    <div class="flex justify-between items-start" style="width: 251px;">
+                        <div class="opacity-40 text-white">Учеников всего:</div>
+                        <div class="text-white font-bold">200</div>
+                    </div>
+                    <div class="flex justify-between items-start" style="width: 251px;">
+                        <div class="opacity-40 text-white">Успешно закончили курс:</div>
+                        <div class="text-white font-bold">190</div>
+                    </div>
+                </div>
+                <div style="width: 714px;">
+                    <div class="flex justify-between items-start" style="width: 277px;">
+                        <div class="opacity-40 text-white">Заработано учениками:</div>
+                        <div class="text-white font-bold">400 000₽</div>
+                    </div>
+                    <div class="flex w-full h-1.5" style="margin: 7px 0 5px 0;">
+                        <div class="bg-grad w-full h-full"></div>
+                        <div class="h-full bg-white"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="opacity-40 text-white">0</div>
+                        <div class="opacity-40 text-white">1 000 000₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 200px 0 200px 0">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <img src="./img/about__img.svg" alt="Процессор">
+                </div>
+                <div style="width: 636px;">
+                    <div class="text-5xl text-white font-bold mb-12">Чем мы занимаемся?</div>
+                    <div class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto">
+            <div class="flex items-center text-white text-5xl font-bold"><img src="./img/icon-heading.svg" alt="" style="margin-right: 20px;"> Быстрый старт</div>
+            <div class="opacity-50 text-white max-w-md" style="margin-top: 20px;">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</div>
+            <div class="flex" style="margin-top: 80px;">
+                <div class="w-1/4">
+                    <div class="text-4xl text-white font-bold">100%</div>
+                    <div class="bg-grad-2 w-full" style="height: 80px; margin: 20px 0 35px 0;"></div>
+                    <div class="text-sm text-white opacity-50" style="width: 306px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="w-1/4">
+                    <div class="text-4xl text-white font-bold">75%</div>
+                    <div class="flex items-center" style="height: 80px; margin: 20px 0 35px 0;">
+                        <div class="bg-grad-2 w-full" style="height: 60px;"></div>
+                    </div>
+                    <div class="text-sm text-white opacity-50" style="width: 306px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="w-1/4">
+                    <div class="text-4xl text-white font-bold">50%</div>
+                    <div class="flex items-center" style="height: 80px; margin: 20px 0 35px 0;">
+                        <div class="bg-grad-2 w-full" style="height: 30px;"></div>
+                    </div>
+                    <div class="text-sm text-white opacity-50" style="width: 306px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="w-1/4">
+                    <div class="text-4xl text-white font-bold">Итог</div>
+                    <div class="flex items-center" style="height: 80px; margin: 20px 0 35px 0;">
+                        <div class="bg-grad-2 w-full" style="height: 10px;"></div>
+                    </div>
+                    <div class="text-sm text-white opacity-50" style="width: 306px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 200px 0 200px 0">
+        <div class="container mx-auto">
+            <div class="text-center text-white text-5xl font-bold">Получите профессию прямо сейчас</div>
+            <div class="flex justify-between" style="margin-top: 120px;">
+                <div class="text-center">
+                    <img src="./img/icon-1.svg" alt="Desktop">
+                    <div class="text-white font-medium text-2xl" style="margin: 60px 0 30px 0;">Только практические <br> навыки в работе</div>
+                    <div class="opacity-80 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="text-center" style="margin: 0 82px 0 82px;">
+                    <img src="./img/icon-2.svg" alt="USB">
+                    <div class="text-white font-medium text-2xl" style="margin: 60px 0 30px 0;">Работа на самом <br>современном оборудовании</div>
+                    <div class="opacity-80 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+                <div class="text-center">
+                    <img src="./img/icon-3.svg" alt="USB">
+                    <div class="text-white font-medium text-2xl" style="margin: 60px 0 30px 0;">Сертификация <br> по окончании обучения</div>
+                    <div class="opacity-80 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto">
+            <div class="flex items-center text-white text-5xl font-bold" style="margin-bottom: 60px;"><img src="./img/icon-heading-2.svg" alt="" style="margin: 0 20px 0 0;"> Партнеры - топовые бренды</div>
+            <div class="flex justify-between flex-wrap">
+                <div class="w-1/4 text-center flex-shrink-0 border-right-white" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+                <div class="w-1/4 text-center flex-shrink-0 border-right-white" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+                <div class="w-1/4 text-center flex-shrink-0 border-right-white" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+                <div class="w-1/4 text-center flex-shrink-0" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+                <div class="bg-white w-full h-px"></div>
+                <div class="w-1/4 text-center flex-shrink-0 border-right-white" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+                <div class="w-1/4 text-center flex-shrink-0 border-right-white" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+                <div class="w-1/4 text-center flex-shrink-0 border-right-white" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+                <div class="w-1/4 text-center flex-shrink-0" style="padding: 29px 0;">
+                    <img src="./img/msi.png" alt="msi">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 200px 0 200px 0">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <img src="" alt="">
+                <div class="text-center text-white text-5xl font-bold" style="margin: 31px 0 30px 0;">Программа обучения</div>
+                <div class="text-white opacity-50">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</div>
+                <div class="text-center">
+                    <div class="flex justify-center items-center" style="margin-top: 80px;">
+                        <div>
+                            <div class="flex items-center" style="margin-bottom: 87px;">
+                                <div class="text-right">
+                                    <div class="opacity-50 text-sm text-white" style="margin-bottom: 15px;">Неделя №1</div>
+                                    <div class="text-white text-lg">Красивая часть курса, <br> которая помогает в успехе</div>
+                                </div>
+                                <div class="h-px bg-white opacity-30" style="width: 40px; margin-left: 20px;"></div>
+                            </div>
+                            <div class="flex items-center" style="margin-bottom: 87px;">
+                                <div class="text-right">
+                                    <div class="opacity-50 text-sm text-white" style="margin-bottom: 15px;">Неделя №3</div>
+                                    <div class="text-white text-lg">Красивая часть курса, <br> которая помогает в успехе</div>
+                                </div>
+                                <div class="h-px bg-white opacity-30" style="width: 40px; margin-left: 20px;"></div>
+                            </div>
+                            <div class="flex items-center" style="margin-bottom: 87px;">
+                                <div class="text-right">
+                                    <div class="opacity-50 text-sm text-white" style="margin-bottom: 15px;">Неделя №5</div>
+                                    <div class="text-white text-lg">Красивая часть курса, <br> которая помогает в успехе</div>
+                                </div>
+                                <div class="h-px bg-white opacity-30" style="width: 40px; margin-left: 20px;"></div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-right">
+                                    <div class="opacity-50 text-sm text-white" style="margin-bottom: 15px;">Неделя №7</div>
+                                    <div class="text-white text-lg">Красивая часть курса, <br> которая помогает в успехе</div>
+                                </div>
+                                <div class="h-px bg-white opacity-30" style="width: 40px; margin-left: 20px;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-grad-2 w-1.5" style="height: 677px;"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="flex items-center" style="margin-bottom: 87px;">
+                                    <div class="h-px bg-white opacity-30" style="width: 40px; margin-right: 20px;"></div>
+                                    <div class="text-left">
+                                        <div class="opacity-50 text-sm text-white" style="margin-bottom: 15px;">Неделя №2</div>
+                                        <div class="text-white text-lg">Красивая часть курса, <br> которая помогает в успехе</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center" style="margin-bottom: 87px;">
+                                    <div class="h-px bg-white opacity-30" style="width: 40px; margin-right: 20px;"></div>
+                                    <div class="text-left">
+                                        <div class="opacity-50 text-sm text-white" style="margin-bottom: 15px;">Неделя №4</div>
+                                        <div class="text-white text-lg">Красивая часть курса, <br> которая помогает в успехе</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="h-px bg-white opacity-30" style="width: 40px; margin-right: 20px;"></div>
+                                    <div class="text-left">
+                                        <div class="opacity-50 text-sm text-white" style="margin-bottom: 15px;">Неделя №6</div>
+                                        <div class="text-white text-lg">Красивая часть курса, <br> которая помогает в успехе</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto">
+            <div class="flex items-center text-white text-5xl font-bold"><img src="./img/icon-heading.svg" alt="" style="margin-right: 20px;"> Ваши преподаватели</div>
+            <div class="flex justify-between" style="margin-top: 60px">
+                <div class="text-center">
+                    <img src="./img/Дмитрий Иванов-1.png" alt="Дмитрий Иванов">
+                    <div class="text-white text-2xl" style="margin: 40px 0 15px 0;">Дмитрий Иванов</div>
+                    <div class="text-white text-white opacity-80" style="margin-bottom: 30px;">Специалист по видеокартам</div>
+                    <button class="border-white rounded-full text-white border-2" style="padding: 10px 30px 10px 30px;">Биография</button>
+                </div>
+                <div class="text-center">
+                    <img src="./img/Дмитрий Иванов-2.png" alt="Дмитрий Иванов">
+                    <div class="text-white text-2xl" style="margin: 40px 0 15px 0;">Дмитрий Иванов</div>
+                    <div class="text-white text-white opacity-80" style="margin-bottom: 30px;">Специалист по видеокартам</div>
+                    <button class="border-white rounded-full text-white border-2" style="padding: 10px 30px 10px 30px;">Биография</button>
+                </div>
+                <div class="text-center">
+                    <img src="./img/Дмитрий Иванов-3.png" alt="Дмитрий Иванов">
+                    <div class="text-white text-2xl" style="margin: 40px 0 15px 0;">Дмитрий Иванов</div>
+                    <div class="text-white text-white opacity-80" style="margin-bottom: 30px;">Специалист по видеокартам</div>
+                    <button class="border-white rounded-full text-white border-2" style="padding: 10px 30px 10px 30px;">Биография</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="padding: 200px 0 30px 0">
+        <div class="container mx-auto">
+            <div class="text-white text-center text-5xl font-bold">Статьи каждую неделю</div>
+            <div class="text-center text-white opacity-50" style="margin: 30px 0 60px 0;">Больше 90% учеников прошли полный курс и смогли <br> собрать свой первый компьютер</div>
+            <div class="flex justify-center">
+                <input type="email" class="opacity-20 rounded-full text-white text-sm" placeholder="E-mail" style="width: 353px; margin-right: -30px;">
+                <button class="bg-grad rounded-full text-white p">Подписаться</button>
+            </div>
+            <div class="flex justify-center space-x-8" style="margin: 40px 0 50px 0;">
+                <div class="flex items-center justify-center rounded-full bg-purple" style="width: 50px; height: 50px;"><img src="./img/vk.svg" alt=""></div>
+                <div class="flex items-center justify-center rounded-full bg-purple" style="width: 50px; height: 50px;"><img src="./img/youtube.svg" alt=""></div>
+                <div class="flex items-center justify-center rounded-full bg-purple" style="width: 50px; height: 50px;"><img src="./img/facebook.svg" alt=""></div>
+                <div class="flex items-center justify-center rounded-full bg-purple" style="width: 50px; height: 50px;"><img src="./img/instagram.svg" alt=""></div>
+            </div>
+            <div class="text-center text-white">Templates #18. More on Figma.info</div>
+        </div>
+    </footer>
+</body>
+</html>
